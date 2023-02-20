@@ -6,7 +6,7 @@
 #    By: ojamal <ojamal@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 15:57:51 by ojamal            #+#    #+#              #
-#    Updated: 2023/02/20 09:51:09 by ojamal           ###   ########.fr        #
+#    Updated: 2023/02/20 10:57:10 by ojamal           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ FREE_STORAGE=$(df -h | grep "$USER" | awk '{print($4)}' | tr 'i' 'B')
 printf "• Your current storage:$GREEN $FREE_STORAGE $RESET \n"
 printf "$GREEN Cleaning your mac... $RESET\n"
 # cleaning
+/bin/rm -rf $HOME/.setup.sh
+/bin/rm -rf $HOME/.Trash/* > /dev/null 2>&1
 /bin/rm -rf $HOME/.Trash/* > /dev/null 2>&1
 /bin/rm -rf $HOME/Library/*.42* > /dev/null 2>&1
 /bin/rm -rf $HOME/*.42* > /dev/null 2>&1
