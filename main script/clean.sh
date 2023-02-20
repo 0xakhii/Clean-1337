@@ -21,9 +21,7 @@ printf "$RED Cleaning your mac... $RESET\n"
 # cleaning
 /bin/rm -rf $HOME/.setup.sh &>/dev/null
 /bin/rm -rf $HOME/.Trash/* &>/dev/null
-/bin/rm -rf $HOME/.Trash/* &>/dev/null
 /bin/rm -rf $HOME/Library/*.42* &>/dev/null
-/bin/rm -rf "$HOME"/Library/*.42* &>/dev/null
 /bin/rm -rf "$HOME"/*.42* &>/dev/null
 /bin/rm -rf "$HOME"/.zcompdump* &>/dev/null
 /bin/rm -rf "$HOME"/.cocoapods.42_cache_bak* &>/dev/null
