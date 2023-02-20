@@ -6,17 +6,13 @@
 #    By: ojamal <ojamal@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/20 09:51:00 by ojamal            #+#    #+#              #
-#    Updated: 2023/02/20 10:59:17 by ojamal           ###   ########.fr        #
+#    Updated: 2023/02/20 11:04:04 by ojamal           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 RESET="\033[0m"
 RED="\e[1;31m"
 GREEN="\e[1;32m"
-YELLOW="\e[1;33m"
-BLUE="\e[1;34m"
-MAGENTA="\e[1;35m"
-CYAN="\e[1;36m"
 
 #getting the clean.sh file
 curl -s -o $HOME/.clean.sh https://raw.githubusercontent.com/cat161/Clean-1337/main/main%20script/clean.sh
