@@ -6,7 +6,7 @@
 #    By: ojamal <ojamal@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 15:57:51 by ojamal            #+#    #+#              #
-#    Updated: 2023/02/20 11:45:31 by ojamal           ###   ########.fr        #
+#    Updated: 2023/02/20 11:46:33 by ojamal           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,11 +19,8 @@ FREE_STORAGE=$(df -h | grep "$USER" | awk '{print($4)}' | tr 'i' 'B')
 printf "• Your current storage:$GREEN $FREE_STORAGE $RESET \n"
 printf "$RED Cleaning your mac... $RESET\n"
 # cleaning
-/bin/rm -rf $HOME/.setup.sh &>/dev/null
-/bin/rm -rf $HOME/.Trash/* &>/dev/null
 /bin/rm -rf $HOME/.Trash/* &>/dev/null
 /bin/rm -rf $HOME/Library/*.42* &>/dev/null
-/bin/rm -rf "$HOME"/Library/*.42* &>/dev/null
 /bin/rm -rf "$HOME"/*.42* &>/dev/null
 /bin/rm -rf "$HOME"/.zcompdump* &>/dev/null
 /bin/rm -rf "$HOME"/.cocoapods.42_cache_bak* &>/dev/null
