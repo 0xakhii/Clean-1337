@@ -6,7 +6,7 @@
 #    By: ojamal <ojamal@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/20 09:51:00 by ojamal            #+#    #+#              #
-#    Updated: 2023/02/20 10:40:34 by ojamal           ###   ########.fr        #
+#    Updated: 2023/02/20 10:50:12 by ojamal           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ MAGENTA="\e[1;35m"
 CYAN="\e[1;36m"
 
 #getting the clean.sh file
-curl -o $HOME/.clean.sh https://raw.githubusercontent.com/cat161/Clean-1337/main/clean.sh >> /dev/null 2>&1
+curl -o $HOME/.clean.sh https://raw.githubusercontent.com/cat161/Clean-1337/main/clean.sh
 printf "• Downloading the clean script...\n"
 sleep 1;
 printf "•$GREEN Done $RESET\n"
