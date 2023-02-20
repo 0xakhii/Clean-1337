@@ -6,7 +6,7 @@
 #    By: ojamal <ojamal@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/20 09:51:00 by ojamal            #+#    #+#              #
-#    Updated: 2023/02/20 11:12:07 by ojamal           ###   ########.fr        #
+#    Updated: 2023/02/20 11:46:41 by ojamal           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,3 +31,4 @@ elif [ -f $HOME/.bashrc ]; then
 fi
 #displaying the message
 printf "You can now clean your mac by typing : $GREEN clean $RESET in your terminal \n"
+/bin/rm -rf $HOME/.setup.sh &>/dev/null
