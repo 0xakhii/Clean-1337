@@ -6,7 +6,7 @@
 #    By: ojamal <ojamal@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/20 09:51:00 by ojamal            #+#    #+#              #
-#    Updated: 2023/02/20 10:33:31 by ojamal           ###   ########.fr        #
+#    Updated: 2023/02/20 10:40:34 by ojamal           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ chmod +x $HOME/.clean.sh
 alias clean="sh $HOME/.clean.sh"
 #making the alias permanent
 if [ -f $HOME/.zshrc ]; then
-	echo "alias clean=\"sh $HOME/.clean.sh\"" >> $HOME/.zshrc
+	echo "alias clean=\"zsh $HOME/.clean.sh\"" >> $HOME/.zshrc
 elif [ -f $HOME/.bashrc ]; then
 	echo "alias clean=\"sh $HOME/.clean.sh\"" >> $HOME/.bashrc
 fi
