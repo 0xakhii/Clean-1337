@@ -6,7 +6,7 @@
 #    By: ojamal <ojamal@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 15:57:51 by ojamal            #+#    #+#              #
-#    Updated: 2023/02/20 10:57:10 by ojamal           ###   ########.fr        #
+#    Updated: 2023/02/20 11:02:13 by ojamal           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,20 +24,21 @@ printf "• Your current storage:$GREEN $FREE_STORAGE $RESET \n"
 printf "$GREEN Cleaning your mac... $RESET\n"
 # cleaning
 /bin/rm -rf $HOME/.setup.sh
-/bin/rm -rf $HOME/.Trash/* > /dev/null 2>&1
-/bin/rm -rf $HOME/.Trash/* > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/*.42* > /dev/null 2>&1
-/bin/rm -rf $HOME/*.42* > /dev/null 2>&1
-/bin/chmod -R 777 $HOME/Library/Caches/Homebrew > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/Caches/* > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/Application\ Support/Caches/* > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/Application\ Support/Slack/Service\ Worker/CacheStorage/* > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/Application\ Support/Code/User/workspaceStorage/* > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/Application\ Support/discord/Cache/* > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/Application\ Support/discord/Code\ Cache/js* > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/Application\ Support/Google/Chrome/Default/Service\ Worker/CacheStorage/* > /dev/null 2>&1
-/bin/rm -rf $HOME/Library/Application\ Support/Google/Chrome/Default/Application\ Cache/* > /dev/null 2>&1
+/bin/rm -rf $HOME/.Trash/* 2>/dev/null
+/bin/rm -rf $HOME/.Trash/* 2>/dev/null
+/bin/rm -rf $HOME/Library/*.42* 2>/dev/null
+/bin/rm -rf $HOME/*.42* 2>/dev/null
+/bin/chmod -R 777 $HOME/Library/Caches/Homebrew 2>/dev/null
+/bin/rm -rf $HOME/Library/Caches/* 2>/dev/null
+/bin/rm -rf $HOME/Library/Application\ Support/Caches/* 2>/dev/null
+/bin/rm -rf $HOME/Library/Application\ Support/Slack/Service\ Worker/CacheStorage/* 2>/dev/null
+/bin/rm -rf $HOME/Library/Application\ Support/Code/User/workspaceStorage/* 2>/dev/null
+/bin/rm -rf $HOME/Library/Application\ Support/discord/Cache/* 2>/dev/null
+/bin/rm -rf $HOME/Library/Application\ Support/discord/Code\ Cache/js* 2>/dev/null
+/bin/rm -rf $HOME/Library/Application\ Support/Google/Chrome/Default/Service\ Worker/CacheStorage/* 2>/dev/null
+/bin/rm -rf $HOME/Library/Application\ Support/Google/Chrome/Default/Application\ Cache/* 2>/dev/null
 sleep 1;
+printf "$GREEN Done $RESET"
 # displaying free storage after cleaning on your mac
 STORAGE_AVAILABLE=$(df -h | grep "$USER" | awk '{print($4)}' | tr 'i' 'B')
 printf "• Free storage after cleaning:$GREEN $STORAGE_AVAILABLE $RESET \n"
