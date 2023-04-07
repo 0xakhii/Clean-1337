@@ -1,5 +1,5 @@
 # Clean-1337
-this bash script helps you clean unwanted files and makes more storage in your session 
+This bash script can help you remove unwanted files and free up storage space on your iMac.
 
 # installation
 Just copy this command and past it in your Terminal and hit Enter: 
