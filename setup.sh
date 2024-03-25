@@ -26,10 +26,8 @@ alias clean="sh $HOME/.clean.sh"
 #making the alias permanent
 if [ -f $HOME/.zshrc ]; then
 	echo "alias clean=\"zsh $HOME/.clean.sh\"" >> $HOME/.zshrc
- 	source $HOME/.zshrc
 elif [ -f $HOME/.bashrc ]; then
 	echo "alias clean=\"sh $HOME/.clean.sh\"" >> $HOME/.bashrc
-	source $HOME/.bashrc
 fi
 #displaying the message
 printf "You can now clean your mac by typing : $GREEN clean $RESET in your terminal \n"
